@@ -79,11 +79,11 @@ void loop()
   pre_distance = distance;
 
   // output the distance to the serial port
-  // Serial.print("Min:");        Serial.print(_DIST_MIN);
+  Serial.print("Min:");        Serial.print(_DIST_MIN);
   Serial.print(",distance:");
   Serial.println(distance);
-  // Serial.print(",Max:");       Serial.print(_DIST_MAX);
-  // Serial.println("");
+  Serial.print(",Max:");       Serial.print(_DIST_MAX);
+  Serial.println("");
 
   // do something here
   Serial.println(brightness);

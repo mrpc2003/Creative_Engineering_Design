@@ -106,7 +106,7 @@ void loop()
   }
 
   // Modify the below line to implement the EMA equation
-  dist_ema = _EMA_ALPHA * dist_raw + (1 - _EMA_ALPHA) * dist_prev; // EMA equation
+  dist_ema = _EMA_ALPHA * dist_raw + (1 - _EMA_ALPHA) * dist_ema; // EMA equation
   dist_median = median_filter(dist_raw);                           // median filter
 
   // output the distance to the serial port
